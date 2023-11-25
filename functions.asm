@@ -55,7 +55,7 @@ itoa:
     jmp  .itoa_next_int
 
 .itoa_reverse:
-    mov eax,              dword [ebp+8]
+    mov eax,              [ebp+8]
     mov byte [eax],       48
     mov byte [eax+ecx+1], 0
     cmp ecx,              0
